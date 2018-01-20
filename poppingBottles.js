@@ -1,9 +1,8 @@
 var poppingBottles = function(investment) {
   var bottles = Math.floor(investment / 2);
   var bottlesObj = {
-    bottlesEarned: 0,
     capsEarned: 0,
-    totalBottles: 0
+    bottlesEarned: 0
   };
   var totalBottles = bottles;
   var caps = bottles;
@@ -28,4 +27,5 @@ var poppingBottles = function(investment) {
   return(bottlesObj);
 };
 console.log(poppingBottles(process.argv[2]));
+
 
