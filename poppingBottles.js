@@ -21,7 +21,6 @@ var poppingBottles = function(investment) {
 };
 console.log(poppingBottles(process.argv[2]));
   function reedeme(bottlesInfo, reedemeFrom, value) {
-    console.log(bottlesInfo, reedemeFrom, value);
     var temp = bottlesInfo.remaining[reedemeFrom];
     var reedemeValue = Math.floor(bottlesInfo.remaining[reedemeFrom] / value);
     bottlesInfo.totalBottles += reedemeValue;

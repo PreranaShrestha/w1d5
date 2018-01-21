@@ -7,8 +7,7 @@ function maxProfit(stockPrices) {
       if (element - stockPrices[j] < 0) {
         maxProfit.push(stockPrices[j] - element);
       }
-      //console.log(maxProfit === undefined);
-      if(max < Math.max(...maxProfit) && !(maxProfit === undefined)) {
+      if (max < Math.max(...maxProfit) && !(maxProfit === undefined)) {
         max = Math.max(...maxProfit);
       }
     }
